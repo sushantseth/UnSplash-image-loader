@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+input {
+  padding: 15px;
+  width: 25rem;
+  margin-right: 10px;
+}
+
+.inputandsubmitdiv {
+  display: block;
+  text-align: center;
+  opacity: 1;
+}
+
+button {
+  padding: 15px;
+  width: 10rem;
+  background-color: lightblue;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.card {
+  display: inline-block;
+  border: solid;
+  margin: 2rem;
+  width: 25rem;
+  height: 30rem;
+  z-index: 0;
+  transition: all 0.2s ease;
+  -webkit-filter: blur(0px);
+}
+.card:hover {
+  -webkit-filter: blur(3px);
+  z-index: 0;
+}
+
+.card:hover ~ .hoverdetails {
+  display: block;
+  visibility: visible;
+}
+.itemclass {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+}
+img {
+  height: 20rem;
+  width: 20rem;
+  margin-top: 20px;
+}
+img:hover {
+  backdrop-filter: blur(10px);
+  filter: blur(4px);
+  transition: 0.5s ease;
+}
+.hoverdetails {
+  z-index: 1;
+  position: relative;
+  bottom: 6rem;
+  font-size: 20px;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+.hoverdetails:hover {
+  visibility: visible;
+}
